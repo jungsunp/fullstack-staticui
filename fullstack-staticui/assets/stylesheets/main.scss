@@ -1,0 +1,62 @@
+
+.navbar {
+  background-color: #EB8258;
+  font-family: 'Pacifico','cursive';
+
+  li{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+  }
+}
+
+.navbar-default .navbar-brand{
+  color: black;
+}
+
+.navbar-default .navbar-nav>li>a{
+  color: black;
+}
+
+.hotels .form-control{
+  width: 75%;
+}
+
+.restaurants .form-control{
+  width: 75%;
+}
+
+.activities .form-control{
+  width: 75%;
+}
+
+.selectors {
+  overflow: hidden;
+}
+
+.selectors>div {
+  overflow: hidden;
+}
+
+.selectors .btn-go{
+  float: left;
+}
+
+body {
+  background-color: #F6F740;
+}
+
+  /* Always set the map height explicitly to define the size of the div
+  * element that contains the map. */
+#map {
+  height: 1000px;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand {
+	color: $your-color-here;
+} */

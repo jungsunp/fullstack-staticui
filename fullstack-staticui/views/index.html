@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div id='map' class = 'map col-lg-8'>
+
+
+</div>
+
+<div class = 'right-pane col-lg-4'>
+
+  <div class = 'selectors'>
+    <div class = 'hotels'>
+      <h2>hotels</h2>
+      <select class='form-control'>
+        {% for hotel in hotels %}
+          <option value = {{ hotel.id }}>
+            {{ hotel.name }}
+          </option>
+        {% endfor %}
+      </select>
+      <button type="button" class="btn btn-default btn-go">Go!</button>
+    </div>
+    <div class = 'restaurants'>
+      <h2>restaurants</h2>
+      <select class='form-control'>
+        {% for restaurant in restaurants %}
+          <option value = {{ restaurant.id }}>
+            {{ restaurant.name }}
+          </option>
+        {% endfor %}
+      </select>
+      <button type="button" class="btn btn-default btn-go">Go!</button>
+    </div>
+    <div class = 'activities'>
+      <h2>activities</h2>
+      <select class='form-control'>
+        {% for activity in activities %}
+          <option value = {{ activity.id }}>
+            {{ activity.name }}
+          </option>
+        {% endfor %}
+      </select>
+      <button type="button" class="btn btn-default btn-go">Go!</button>
+    </div>
+  </div>
+
+  <div class = 'day'>
+    <div class = 'text'>
+      <h1>Day 1</h1>
+    </div>
+    <div class="btn-group" role="group" aria-label="...">
+      <button type="button" class="btn btn-default">1</button>
+      <button type="button" class="btn btn-default">2</button>
+      <button type="button" class="btn btn-default">3</button>
+      <button type="button" class="btn btn-default">+</button>
+    </div>
+  </div>
+
+  <div class='trip-details'>
+    <div class='hotel'>
+      <h2>My Hotels</h2>
+      <ul>
+        <li>xxxxxxxx</li>
+        <button type="button" class="btn btn-default">X</button>
+      </ul>
+    </div>
+    <div class='restaurant'>
+      <h2>My restaurants</h2>
+      <ul>
+        <li>xxxxxxxx</li>
+        <button type="button" class="btn btn-default">X</button>
+      </ul>
+    </div>
+    <div class='activity'>
+      <h2>My activities</h2>
+      <ul>
+        <li>xxxxxxxx</li>
+        <button type="button" class="btn btn-default">X</button>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Trip Planner Static</title>
+    <link href='/bootstrap/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='/stylesheets/main.css' rel='stylesheet'>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Quicksand" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+      <!-- Navbar here -->
+      <nav class="navbar navbar-default"
+      >
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- <button> -->
+              <span class="navbar-brand glyphicon glyphicon-map-marker"></span>
+              <span class="navbar-brand">Trip Planner</span>
+            <!-- </button> -->
+
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Contact</a></li>
+            </ul>
+
+          </div><!-- /.navbar-collapse -->
+
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+    <div>
+      <!-- index.html stuffs -->
+      {% block content %} {% endblock %}
+    </div>
+
+  <!-- <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzWDIi9kZy1CRt9fJjdC6yrqj_otmluyM&callback=initMap"
+    async defer></script>
+    <script src='jquery/jquery.js'></script>
+    <script src='gmaps.js'></script>
+    <script src='bootstrap/js/bootstrap.js'></script>
+  </body>
+
+</html>
